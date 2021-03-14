@@ -20,7 +20,7 @@
 
 ## Working:
 
-- It is basically an IoT based Autonomous Vehicle whcih works using I2C protocol and can be used during wartime to get real time data about dangerous mines, poisonous gases and temperature levels of the enemy territory via WiFi.
+- It is basically an IoT based Autonomous Vehicle which works using I2C protocol and can be used during wartime to get real time data about dangerous mines, poisonous gases and temperature levels of the enemy territory via WiFi.
 - Here the Arduino Mega 2560 is configured as the Slave I2C device. The sensors are connected to it and the arduino sends the sensor data to the NodeMCU ESP8266 via I2C.
 - The NodeMCU ESP8266 is configured as the Master I2C device. It fetches the data sent by the Arduino Mega 2560 via I2C and sends them to the ThingSpeak API via the internet.(NodeMCU is connected to a WiFi network always).
 -  MQ-135 is used for monitoring the quality of the air (Poisonous or clean), NPN inductive proximity sensor is basically a proximity metal detector and is used to detect mines (if the value is above 1000, there are no mines close to the vehicle but if the value is below 400, then a mine is detected), the LM35 sensor is used to measure the temperature levels. 

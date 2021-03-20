@@ -17,6 +17,7 @@
 7. 4 Channel relay module
 8. Four 12 volt DC motors
 9. 1 metal chassy and 4 wheels
+10. Power supply (12V Battery is preferred)
 
 ## Working:
 
